@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------
+   TIPOGRAFÍA GLOBAL
+-------------------- */
+
+/* Importamos fuentes modernas similares a Futura */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-neutral-50 text-neutral-800 antialiased;
+  font-family: 'Futura', 'Poppins', 'Inter', sans-serif;
+}
+
+/* --------------------
+   TITULOS Y TEXTOS
+-------------------- */
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: -0.02em;
+}
+
+/* Suaviza las transiciones */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Estética minimalista en imágenes */
+img {
+  @apply rounded-2xl;
+}
+
+/* Elimina scrollbars visuales para un look limpio */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a3a3a3;
+}
